@@ -47,11 +47,12 @@ public class BodyBuggBypass {
 		System.out.printf("Writing data to: %s\n", logPath);
 		FileWriter out = new FileWriter(logPath);
 		
-		ser.writeCommand("retrieve P");
+		ser.writeCommand("retrieve PDP");
 		out.write(ser.readResponse().toString());
 		
 		out.close();
 		
+		System.out.println("Clearing device memory and updating timestamps.");
 		ser.writeCommand("file init");
 		ser.writeCommand(String.format("set lastdataupdate %d", System.currentTimeMillis() / 1000L));
 		ser.writeCommand(String.format("set epoch %d", System.currentTimeMillis() / 1000L));
