@@ -8,3 +8,5 @@ To avoid the same fate as the FreeTheBugg project, I am not packaging any of the
   * [armband-applets-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/armband-applets-1.10.0-SNAPSHOT.jar)
   * [common-applets-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com//bodybugg/files/static/install/common-applets-1.10.0-SNAPSHOT.jar)
   * [common-shared-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-shared-1.10.0-SNAPSHOT.jar)
+
+More information can be found at: [Reverse Engineering the BodyBugg](http://www.bemasher.net/archives/1130)
