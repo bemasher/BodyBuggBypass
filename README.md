@@ -33,7 +33,7 @@ The input file is parsed and written as a json encoding to `OUTFILE`. The basic 
   * Payload is a homogeneous list of any of the following types:
     * `uint16`
     * `int64`
-    * `{int64, int, int}`
+    * ``{Timestamp int64, I int, J int}``
 
 # Caveats
 
