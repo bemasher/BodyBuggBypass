@@ -8,6 +8,11 @@ The program writes all retrieved data to a file named: `{timestamp of last data 
 Once all data has been read, the device's memory is cleared and internal time as well as data retrieval times are set to the current date/time.
 
 ### Dump Parser
+Building the parser requires golang. Steps to build are as follows:
+
+	go get github.com/bemasher/errhandler
+	go build parser.go
+
 Usage: `parser [INFILE] [[OUTFILE]]`
 
 Parameters:
