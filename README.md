@@ -39,4 +39,6 @@ To avoid the same fate as the FreeTheBugg project, I am not packaging any of the
   * [common-shared-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-shared-1.10.0-SNAPSHOT.jar)
 
 # Information
+Sample dump and parsed data are found in `sample.log` and `sample.json`.
+
 More information can be found at: [Reverse Engineering the BodyBugg](http://www.bemasher.net/archives/1130)
