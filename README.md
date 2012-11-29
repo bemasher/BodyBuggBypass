@@ -10,8 +10,10 @@ Once all data has been read, the device's memory is cleared and internal time as
 ### Dump Parser
 Usage: `parser [INFILE] [[OUTFILE]]`
 
-`INFILE` is required.
-`OUTFILE` is optional and defaults to "data.json"
+Parameters:
+
+  * `INFILE` is required.
+  * `OUTFILE` is optional and defaults to "data.json"
 
 The input file is parsed and written as a json encoding to `OUTFILE`. The basic structure of the file is a list of the following struct:
 
