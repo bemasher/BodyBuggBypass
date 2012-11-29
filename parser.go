@@ -89,7 +89,15 @@ func (s *RawSession) Read(r *bytes.Buffer) error {
 // Parses timestamp and payload
 func (rs RawSession) Parse() (s Session, err error) {
 	s.Channel = rs.Channel
-	fmt.Sscanf(rs.Info[15:23], "%X", &s.Epoch)
+	
+	if len(rs.Info) != 51 {
+		return s, fmt.Errorf("Expected info string of length 51, got: %d", len(rs.Info))
+	}
+	
+	_, err = fmt.Sscanf(rs.Info[15:23], "%X", &s.Epoch)
+	if err != nil {
+		return s, err
+	}
 	
 	switch rs.Channel {
 		case "TIMESTMP": s.Payload, err = Timestamp(rs.Payload)
