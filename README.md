@@ -1,6 +1,6 @@
 # Usage
 
-### Device Dump//Clear
+### Device Dump/Clear
 Usage: `java -jar bodybuggbypass.jar`
 
 The program writes all retrieved data to a file named: `{timestamp of last data retrieval}.log`
@@ -21,12 +21,12 @@ The input file is parsed and written as a json encoding to `OUTFILE`. The basic 
 		Payload []arbitrary
 	}
 
-  * Channel represents the channel name of the session
+  * Channel represents the channel name of the session.
   * Epoch is the unix timestamp of the time the first data point was recorded.
   * Payload is a homogeneous list of any of the following types:
-    * uint16
-    * int64
-    * {int64, int, int}
+    * `uint16`
+    * `int64`
+    * `{int64, int, int}`
 
 # Caveats
 
