@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
-	"errhandler"
 	"encoding/json"
+	"github.com/bemasher/errhandler"
 )
 
 const (
