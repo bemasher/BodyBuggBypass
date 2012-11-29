@@ -9,4 +9,6 @@ To avoid the same fate as the FreeTheBugg project, I am not packaging any of the
   * [common-applets-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-applets-1.10.0-SNAPSHOT.jar)
   * [common-shared-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-shared-1.10.0-SNAPSHOT.jar)
 
+I've written a preliminary log parser in golang which decodes all data into a json encoded object containing a list of session objects. Each session includes the starting time, channel name and any associated data. However, before posting the tool I'm still working on refining the tool so it's process is more easily understood.
+
 More information can be found at: [Reverse Engineering the BodyBugg](http://www.bemasher.net/archives/1130)
