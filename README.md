@@ -29,10 +29,10 @@ The input file is parsed and written as a json encoding to `OUTFILE`. The basic 
 		Payload []arbitrary
 	}
 
-  * Channel represents the channel name of the session.
-  * Epoch is the unix timestamp of the time the first data point was recorded.
-  * Divisor is used for determining the time interval between records, 1 divisor = 1/32 sec.
-  * Payload is a homogeneous list of any of the following types:
+  * `Channel` represents the channel name of the session.
+  * `Epoch` is the unix timestamp of the time the first data point was recorded.
+  * `Divisor` is used for determining the time interval between records, 1 divisor = 1/32 sec.
+  * `Payload` is a homogeneous list of any of the following types:
     * `uint16`
     * `int64`
     * `{Timestamp int64, I int, J int}`
