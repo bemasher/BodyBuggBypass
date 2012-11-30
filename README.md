@@ -20,16 +20,18 @@ Parameters:
   * `INFILE` is required.
   * `OUTFILE` is optional and defaults to "data.json"
 
-The input file is parsed and written as a json encoding to `OUTFILE`. The basic structure of the file is a list of the following struct:
+The input file is parsed and written as a json encoding to `OUTFILE`. The basic structure of the file is a list of the following object:
 
 	Session {
 		Channel string
 		Epoch int64
+		Divisor uint32
 		Payload []arbitrary
 	}
 
   * Channel represents the channel name of the session.
   * Epoch is the unix timestamp of the time the first data point was recorded.
+  * Divisor is used for determining the time interval between records, 1 divisor = 1/32 sec.
   * Payload is a homogeneous list of any of the following types:
     * `uint16`
     * `int64`
