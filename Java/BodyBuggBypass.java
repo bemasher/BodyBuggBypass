@@ -42,7 +42,7 @@ public class BodyBuggBypass {
 		String serialPort = ports[0];
 		
 		SerialPort3 ser = new SerialPort3("bmcommapex5", serialPort);
-		ser.setAddr(0x0000000E, 0xFFFFFFFF);
+		ser.setAddr(0xFFFFFFFF, 0xFFFFFFFF);
 		
 		ser.open();
 		
