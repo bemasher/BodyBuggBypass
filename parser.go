@@ -4,8 +4,10 @@ import (
 	"io"
 	"os"
 	"fmt"
+	"time"
 	"bytes"
 	"regexp"
+	"reflect"
 	"strconv"
 	"strings"
 	"encoding/json"
@@ -29,6 +31,7 @@ type RawSession struct {
 type Session struct {
 	Channel string
 	Epoch int64
+	Divisor uint32
 	Payload interface{}
 }
 
@@ -99,11 +102,26 @@ func (rs RawSession) Parse() (s Session, err error) {
 		return s, err
 	}
 	
+	_, err = fmt.Sscanf(rs.Info[47:], "%X", &s.Divisor)
+	if err != nil {
+		return s, err
+	}
+	
 	switch rs.Channel {
 		case "TIMESTMP": s.Payload, err = Timestamp(rs.Payload)
 		case "DIAGNSTC": s.Payload, err = Diagnostic(rs.Payload)
 		default: s.Payload, err = Packed(rs.Payload)
 	}
+	
+	var start, stop time.Time
+	start = time.Unix(s.Epoch, 0)
+	v := reflect.ValueOf(s.Payload)
+	if v.Kind() == reflect.Slice {
+		stop = start.Add(time.Duration(v.Len() * int(s.Divisor >> 5)) * time.Second)
+	}
+	
+	fmt.Printf("Parsed % -9s: % 7s -> % 7s\n", s.Channel, start.Format(time.Kitchen), stop.Format(time.Kitchen))
+	
 	return
 }
 
