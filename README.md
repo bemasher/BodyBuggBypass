@@ -41,9 +41,9 @@ The input file is parsed and written as a json encoding to `OUTFILE`. The basic 
 
 To avoid the same fate as the FreeTheBugg project, I am not packaging any of the jars this program depends on which belong to BodyMedia. Instead you'll need to download and place them in the directory *bodybuggbypass_lib* which must be in the same directory as the executable *jar bodybuggbypass.jar*:
 
-  * [armband-applets-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/armband-applets-1.10.0-SNAPSHOT.jar)
-  * [common-applets-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-applets-1.10.0-SNAPSHOT.jar)
-  * [common-shared-1.10.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-shared-1.10.0-SNAPSHOT.jar)
+  * [armband-applets-1.11.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/armband-applets-1.11.0-SNAPSHOT.jar)
+  * [common-applets-1.11.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-applets-1.11.0-SNAPSHOT.jar)
+  * [common-shared-1.11.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-shared-1.11.0-SNAPSHOT.jar)
 
 # Information
 Sample dump and parsed data are found in `sample.log` and `sample.json`.
