@@ -45,6 +45,8 @@ To avoid the same fate as the FreeTheBugg project, I am not packaging any of the
   * [common-applets-1.11.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-applets-1.11.0-SNAPSHOT.jar)
   * [common-shared-1.11.0-SNAPSHOT.jar](http://application.bodybugg.com/bodybugg/files/static/install/common-shared-1.11.0-SNAPSHOT.jar)
 
+This project was developed using version 1.10.0 of the jar's. I have not had time to add compatibility with version 1.11.0 and will not work. Links to version 1.10.0 no longer work.
+
 # Information
 Sample dump and parsed data are found in `sample.log` and `sample.json`.
 
