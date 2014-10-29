@@ -1,3 +1,7 @@
+# Update
+
+This project is dead, the method used to get access to the device has been fixed. I will leave this here simply for posterity.
+
 # Usage
 
 ### Device Dump/Clear
@@ -49,5 +53,3 @@ This project was developed using version 1.10.0 of the jar's. I have not had tim
 
 # Information
 Sample dump and parsed data are found in `sample.log` and `sample.json`.
-
-More information can be found at: [Reverse Engineering the BodyBugg](http://www.bemasher.net/archives/1130)
